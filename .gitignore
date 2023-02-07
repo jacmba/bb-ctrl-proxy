@@ -1,0 +1,12 @@
+__pycache__
+.pytest_cache
+.vscode
+bin
+include
+lib
+lib64
+share
+*.side
+*.log
+pyvenv.cfg
+.env
