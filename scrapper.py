@@ -7,7 +7,9 @@ from selenium.webdriver.common.by import By
 class Scrapper():
   def __init__(self):
     options = ChromeOptions()
+    options.add_argument("--no-sandbox")
     options.add_argument("--headless")
+    options.add_argument("--disable-dev-shm-usage")
     self.user = os.environ['BC_USER']
     self.passwd = os.environ['BC_PASS']
     self.url = os.environ['BC_URL']
